@@ -1,0 +1,14 @@
+headers = {
+    "Accept": "application/json, text/javascript, */*; q=0.01",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Connection": "keep-alive",
+    "Content-Length": "239",
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Cookie": "OUTFOX_SEARCH_USER_ID=969922199@10.108.160.100; JSESSIONID=aaaT2kNDhaW8ia9pNCwpx; OUTFOX_SEARCH_USER_ID_NCOO=1913004122.8620024; ___rl__test__cookies=1597030696050",
+    "Host": "fanyi.youdao.com",
+    "Origin": "http://fanyi.youdao.com",
+    "Referer": "http://fanyi.youdao.com/",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+    "X-Requested-With": "XMLHttpRequest",
+}

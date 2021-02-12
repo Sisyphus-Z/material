@@ -1,0 +1,8 @@
+链接：https://pan.baidu.com/s/1K3PWQL-ybzs7eicHHwA84g 
+
+提取码：x3ba
+
+
+清单明细：
+1、安装文档（jdk、hadoop、hive安装文档）
+2、安装包（jdk安装包、hadoop安装包、hive安装包、MySQL连接器）

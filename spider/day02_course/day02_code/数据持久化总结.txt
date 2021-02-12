@@ -1,0 +1,85 @@
+﻿数据持久化
+
+1、MySQL数据持久化
+
+import pymysql
+
+def __init__(self):
+     self.db = pymysql.connect('','','')
+     self.cur = self.db.cursor()
+
+def save_html(self, r_list):
+     ins = 'insert into xxx values(%s,%s,...)'
+     for r in r_list:
+         li = []
+         self.cur.execute(ins, li)
+         self.db.commit()
+
+def run(self):
+    self.cur.close()
+    self.db.close()
+
+2、MongoDB数据持久化
+
+import pymongo
+
+def __init__(self):
+    self.conn = pymongo.MongoClient('localhost', 27017)
+    self.db = self.conn['xxx']
+    self.myset = self.db['xxx']
+
+def save_html(self, r_list):
+    for r in r_list:
+        item = {}
+        self.myset.insert_one(item)
+
+3、csv数据持久化
+
+import csv
+
+def __init__(self):
+    self.f = open('xxx.csv', 'w', newline='')
+    self.writer = csv.writer(self.f)
+
+def save_html(self, r_list):
+    for r in r_list:
+        li = []
+        self.writer.writerow(li)
+
+def run(self):
+    self.f.close()
+
+
+
+# 数据持久化扩展
+
+MySQL单条数据存入：cur.execute(ins, ['xx','xx','xx])
+MySQL多条数据存入：cur.executemany(ins, [(),(),(),()...,()])
+
+
+MongoDB单条数据存入：myset.insert_one({})
+MongoDB多条数据存入：myset.insert_many([{},{},{},{},...,{}])
+
+csv单条数据存入：writer.writerow([])
+csv多条数据存入：writer.writerows([(),(),(),...,()])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
